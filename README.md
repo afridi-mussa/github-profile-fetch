@@ -1,8 +1,8 @@
 🚀 GitHub Profile Finder — Async State Management (Redux Thunk + RTK Query)
 
-🎯 Live Demo: https://github-profile-finder-demo.netlify.app/
+🎯 Live Demo: https://github-profile-fetch-by-mussa.netlify.app/
 
-(Replace with your actual deployed link when you upload to Netlify or Vercel)
+
 
 📘 Project Overview
 
