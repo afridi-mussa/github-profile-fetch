@@ -1,0 +1,39 @@
+.profile-card {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fff
+}
+
+.profile-card img {
+    width: 96px;
+    height: 96px;
+    border-radius: 8px
+}
+
+.profile-card .right h2 {
+    margin: 0
+}
+
+.profile-card .bio {
+    margin: 6px 0;
+    color: #374151
+}
+
+.profile-card .meta {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    color: #6b7280
+}
+
+.profile-card.muted {
+    color: #6b7280;
+    padding: 12px
+}
+
+.profile-card.error {
+    color: crimson
+}
