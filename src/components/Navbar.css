@@ -1,22 +1,24 @@
 .nav {
-    background: linear-gradient(90deg, #0f172a, #111827);
-    color: white;
-    padding: 12px 20px;
+  background: rgba(17, 24, 39, 0.9);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 14px 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 .nav-container {
-    display: flex;
-    gap: 12px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .brand {
-    margin: 0;
-    font-size: 20px;
+  font-size: 22px;
+  margin: 0;
+  color: #38bdf8;
 }
 
 .subtitle {
-    margin: 0;
-    opacity: 0.8;
-    font-size: 12px;
+  font-size: 12px;
+  opacity: 0.8;
 }

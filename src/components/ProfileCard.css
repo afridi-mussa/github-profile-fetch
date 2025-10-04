@@ -1,39 +1,36 @@
 .profile-card {
-    display: flex;
-    gap: 16px;
-    padding: 16px;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    background: #fff
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e2e8f0;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
 }
 
 .profile-card img {
-    width: 96px;
-    height: 96px;
-    border-radius: 8px
-}
-
-.profile-card .right h2 {
-    margin: 0
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  border: 2px solid #38bdf8;
 }
 
 .profile-card .bio {
-    margin: 6px 0;
-    color: #374151
+  color: #cbd5e1;
 }
 
-.profile-card .meta {
-    display: flex;
-    gap: 12px;
-    margin-top: 8px;
-    color: #6b7280
+.profile-card .meta span {
+  color: #a5f3fc;
 }
 
-.profile-card.muted {
-    color: #6b7280;
-    padding: 12px
-}
-
-.profile-card.error {
-    color: crimson
+.profile-card a {
+  color: #38bdf8;
+  text-decoration: none;
 }
