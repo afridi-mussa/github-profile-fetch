@@ -1,16 +1,151 @@
-# React + Vite
+🚀 GitHub Profile Finder — Async State Management (Redux Thunk + RTK Query)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 Live Demo: https://github-profile-finder-demo.netlify.app/
 
-Currently, two official plugins are available:
+(Replace with your actual deployed link when you upload to Netlify or Vercel)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📘 Project Overview
 
-## React Compiler
+This project is a React.js-based GitHub Profile Finder App that demonstrates advanced async state management using Redux Thunk and RTK Query.
+It allows users to search any GitHub username and instantly view their profile information and public repositories, fetched in real-time from the GitHub REST API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🧩 Core Features
+🔍 1. Search GitHub Profiles
 
-## Expanding the ESLint configuration
+Users can enter any GitHub username in the SearchBar.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The app fetches and displays real data from the GitHub Users API
+.
+
+Includes loading and error handling states.
+
+👤 2. Display User Profile (Redux Thunk)
+
+Uses Redux Thunk to handle async actions for fetching profile details.
+
+Shows:
+
+Avatar
+
+Name, Username, Bio
+
+Followers & Following
+
+Public Repositories count
+
+Location and profile link
+
+Redux handles all data and loading/error states globally.
+
+📦 3. Display Repositories (RTK Query)
+
+Uses RTK Query for efficient data fetching, caching, and state synchronization.
+
+Fetches from GitHub Repos API
+.
+
+Displays:
+
+Repository name
+
+Description
+
+Stars & Forks count
+
+Repo URL
+
+RTK Query automatically caches results for performance and avoids duplicate API calls.
+
+💡 4. Responsive and Professional UI
+
+Modern, clean two-column layout:
+
+Left column: Search bar + profile info
+
+Right column: Repository list
+
+Styled using CSS modules for better modularity.
+
+Responsive on all screen sizes (desktop, tablet, mobile).
+
+🧱 Project Structure
+src/
+│
+├── app/
+│   └── store.js                  # Redux store setup
+│
+├── features/
+│   ├── userSlice.js              # Redux Thunk logic for profile data
+│   └── githubApi.js              # RTK Query slice for repos
+│
+├── components/
+│   ├── Navbar/
+│   │   ├── Navbar.jsx
+│   │   └── Navbar.css
+│   ├── SearchBar/
+│   │   ├── SearchBar.jsx
+│   │   └── SearchBar.css
+│   ├── ProfileCard/
+│   │   ├── ProfileCard.jsx
+│   │   └── ProfileCard.css
+│   └── RepoList/
+│       ├── RepoList.jsx
+│       └── RepoList.css
+│
+├── pages/
+│   ├── Home.jsx
+│   └── Home.css
+│
+├── App.jsx
+└── index.js
+
+⚙️ Technologies Used
+Category	Technology
+Frontend	React.js (Vite)
+State Management	Redux Toolkit, Redux Thunk, RTK Query
+Styling	CSS
+API	GitHub REST API
+Deployment	Netlify / Vercel
+🧠 Learning Objectives
+
+By completing this project, you will:
+
+Understand async state management in React.
+
+Learn to implement Redux Thunk for manual async logic.
+
+Learn to use RTK Query for automatic caching and data fetching.
+
+Integrate real-world REST APIs efficiently.
+
+Build a professional front-end architecture with reusable components.
+
+🖥️ Installation & Setup
+# Clone the repository
+git clone https://github.com/your-username/github-profile-finder.git
+
+# Move into the project directory
+cd github-profile-finder
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+
+Then open your browser and go to 👉 http://localhost:5173
+
+🔗 GitHub API Endpoints Used
+Data	Endpoint
+User Profile	https://api.github.com/users/{username}
+User Repositories	https://api.github.com/users/{username}/repos
+🧠 Example Usernames for Testing
+
+Try searching:
+
+torvalds (Creator of Linux)
+
+gaearon (React Core Team)
+
+mussaafridi ( https://github.com/afridi-mussa/ )
